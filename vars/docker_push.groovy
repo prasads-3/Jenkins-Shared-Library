@@ -1,7 +1,7 @@
 def call(String imageName, String imageTag, String dockerHubUser) {
 
     withCredentials([usernamePassword(
-        credentialsId: 'dockerhub',
+        credentialsId: 'DockerHubJack',
         usernameVariable: 'DOCKER_USER',
         passwordVariable: 'DOCKER_PASS'
     )]) {
